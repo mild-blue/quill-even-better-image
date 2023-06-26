@@ -1,0 +1,19 @@
+{
+  "name": "quill-even-better-image",
+  "version": "1.0.0",
+  "source": "src/index.ts",
+  "main": "dist/main.js",
+  "scripts": {
+    "start": "parcel demo/index.html demo/index.ts --dist-dir ./dist/demo ",
+    "watch": "parcel watch",
+    "build": "parcel build",
+    "prettier-format": "prettier --write './**/*.{js,jsx,ts,tsx,css,scss,md,json,html}'",
+    "prettier-check": "prettier --check './**/*.{js,jsx,ts,tsx,css,scss,md,json,html}'"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "2.9.3",
+    "parcel": "^2.9.3",
+    "quill": "^2.0.0-dev.3",
+    "prettier": "^2.8.8"
+  }
+}
