@@ -3,8 +3,9 @@
   "version": "1.0.0",
   "source": "src/index.ts",
   "main": "dist/main.js",
+  "license": "MIT",
   "scripts": {
-    "dev": "parcel demo/index.html demo/index.ts --dist-dir ./dist/demo",
+    "dev": "parcel demo/index.html --dist-dir ./dist/demo",
     "prettier-format": "prettier --write './**/*.{js,jsx,ts,tsx,css,scss,md,json,html}'",
     "prettier-check": "prettier --check './**/*.{js,jsx,ts,tsx,css,scss,md,json,html}'"
   },
