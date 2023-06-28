@@ -6,9 +6,7 @@ export class Resize extends BaseModule {
   public boxes: HTMLDivElement[] = [];
   public dragBox?: EventTarget | null;
   public dragStartX = 0;
-  public dragStartY = 0;
   public preDragWidth = 0;
-  public preDragHeight = 0;
 
   onCreate = () => {
     // add 4 resize handles
@@ -66,10 +64,8 @@ export class Resize extends BaseModule {
     this.dragBox = evt.target;
     // note starting mousedown position
     this.dragStartX = evt.clientX;
-    this.dragStartY = evt.clientY;
     // store the width before the drag
     this.preDragWidth = this.img.width || this.img.naturalWidth;
-    this.preDragHeight = this.img.height || this.img.naturalHeight;
     // set the proper cursor everywhere
     if (isHTMLElement(this.dragBox)) this.setCursor(this.dragBox.style.cursor);
     // listen for movement and mouseup
@@ -88,6 +84,7 @@ export class Resize extends BaseModule {
   handleDrag = (evt: MouseEvent) => {
     // image not set yet
     if (!this.img) return;
+    this.img.removeAttribute("height");
 
     // update image size
     const deltaX = evt.clientX - this.dragStartX;
@@ -98,12 +95,6 @@ export class Resize extends BaseModule {
       // right-side resize handler; dragging right enlarges image
       this.img.width = Math.round(this.preDragWidth + deltaX);
     }
-
-    // calculate the resize factor
-    const factor = this.img.width / this.preDragWidth;
-
-    // update image height
-    this.img.height = Math.round(this.preDragHeight * factor);
 
     this.requestUpdate();
   };
