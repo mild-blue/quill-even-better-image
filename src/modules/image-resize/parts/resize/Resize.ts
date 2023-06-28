@@ -99,11 +99,11 @@ export class Resize extends BaseModule {
       this.img.width = Math.round(this.preDragWidth + deltaX);
     }
 
-    // calculate the resize ratio
-    const ratio = this.img.width / this.preDragWidth;
+    // calculate the resize factor
+    const factor = this.img.width / this.preDragWidth;
 
     // update image height
-    this.img.height = Math.round(this.preDragHeight * ratio);
+    this.img.height = Math.round(this.preDragHeight * factor);
 
     this.requestUpdate();
   };
