@@ -557,6 +557,13 @@
     "@parcel/workers" "2.9.3"
     nullthrows "^1.1.1"
 
+"@parcel/transformer-inline-string@2.9.3":
+  version "2.9.3"
+  resolved "https://registry.yarnpkg.com/@parcel/transformer-inline-string/-/transformer-inline-string-2.9.3.tgz#3501b2e5e311347bc377f3409e3813621275c1ef"
+  integrity sha512-IZNd0Ksl32psX1M41KbUc4BmvVSoLVnlpaMrh9C/l+piFSkDXWMnF0PONX/RcxYMBIwB2jYllheIKH54naeNaA==
+  dependencies:
+    "@parcel/plugin" "2.9.3"
+
 "@parcel/transformer-js@2.9.3":
   version "2.9.3"
   resolved "https://registry.yarnpkg.com/@parcel/transformer-js/-/transformer-js-2.9.3.tgz#4b72022da9bf5aa743a89961c4d61b681bf5e7b9"
@@ -773,6 +780,11 @@
   version "0.2.0"
   resolved "https://registry.yarnpkg.com/@trysound/sax/-/sax-0.2.0.tgz#cccaab758af56761eb7bf37af6f03f326dd798ad"
   integrity sha512-L7z9BgrNEcYyUYtF+HaEfiS5ebkh9jXqbszz7pC0hRBPaatV0XjSD3+eHrpqFemQfgwiFF0QPIarnIihIDn7OA==
+
+"@types/node@^18.16.18":
+  version "18.16.18"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-18.16.18.tgz#85da09bafb66d4bc14f7c899185336d0c1736390"
+  integrity sha512-/aNaQZD0+iSBAGnvvN2Cx92HqE5sZCPZtx2TsK+4nvV23fFe09jVDvpArXr2j9DnYlzuU9WuoykDDc6wqvpNcw==
 
 "@types/quill@^2.0.10":
   version "2.0.10"

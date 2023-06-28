@@ -1,6 +1,6 @@
 import Quill from "quill";
 
-export class QuillImageEmbedOnPaste {
+export default class QuillImageEmbedOnPaste {
   public quill: Quill;
 
   constructor(quill: Quill) {
