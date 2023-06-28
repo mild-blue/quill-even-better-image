@@ -10,7 +10,7 @@
     "prettier-check": "prettier --check './**/*.{js,jsx,ts,tsx,css,scss,md,json,html}'"
   },
   "devDependencies": {
-    "@parcel/transformer-inline-string": "2.9.3",
+    "@parcel/transformer-inline-string": "^2.9.3",
     "@parcel/transformer-sass": "2.9.3",
     "@types/quill": "^2.0.10",
     "@types/node": "^18.16.18",
