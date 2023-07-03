@@ -7,7 +7,12 @@
   "scripts": {
     "dev": "parcel demo/index.html --dist-dir ./dist/demo",
     "prettier-format": "prettier --write './**/*.{js,jsx,ts,tsx,css,scss,md,json,html}'",
-    "prettier-check": "prettier --check './**/*.{js,jsx,ts,tsx,css,scss,md,json,html}'"
+    "prettier-check": "prettier --check './**/*.{js,jsx,ts,tsx,css,scss,md,json,html}'",
+    "prepublishOnly": "parcel build"
+  },
+  "dependencies": {
+    "@swc/helpers": "^0.5.1",
+    "quill": "^2.0.0-dev.3"
   },
   "devDependencies": {
     "@parcel/transformer-inline-string": "^2.9.3",
@@ -15,8 +20,7 @@
     "@types/quill": "^2.0.10",
     "@types/node": "^18.16.18",
     "parcel": "^2.9.3",
-    "prettier": "^2.8.8",
-    "quill": "^2.0.0-dev.3"
+    "prettier": "^2.8.8"
   },
   "browserslist": {
     "production": [
