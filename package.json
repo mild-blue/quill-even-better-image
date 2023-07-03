@@ -2,7 +2,7 @@
   "name": "quill-even-better-image",
   "version": "1.0.0",
   "source": "src/index.ts",
-  "module": "dist/index.js",
+  "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "license": "MIT",
   "scripts": {
