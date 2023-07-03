@@ -17,5 +17,17 @@
     "parcel": "^2.9.3",
     "prettier": "^2.8.8",
     "quill": "^2.0.0-dev.3"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
