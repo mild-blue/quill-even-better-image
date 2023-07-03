@@ -1,6 +1,6 @@
 {
   "name": "quill-even-better-image",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "source": "src/index.ts",
   "main": "dist/main.js",
   "license": "MIT",
