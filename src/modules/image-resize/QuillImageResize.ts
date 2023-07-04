@@ -2,7 +2,6 @@ import Quill from "quill";
 import { Resize } from "./parts/resize/Resize";
 import { isHTMLElement } from "../../helpers/isHTMLElement";
 import DefaultOptions from "./DefaultOptions";
-import { Toolbar } from "./parts/toolbar/ToolBar";
 import { BaseModule } from "./parts/BaseModule";
 import { isHTMLImageElement } from "../../helpers/isHTMLImageElement";
 
@@ -42,7 +41,7 @@ export default class QuillImageResize {
 
     this.removeModules();
     this.modules.push(new Resize(resizer));
-    this.modules.push(new Toolbar(resizer));
+    // this.modules.push(new Toolbar(resizer)); currently still buggy
     this.modules.forEach((module: BaseModule) => module.onCreate());
     this.onUpdate();
   };
