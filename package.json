@@ -2,8 +2,12 @@
   "name": "quill-even-better-image",
   "version": "1.0.0",
   "source": "src/index.ts",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "main": "dist/main.js",
+  "module": "dist/module.js",
+  "types": "dist/types.d.ts",
+  "files": [
+    "dist"
+  ],
   "license": "MIT",
   "scripts": {
     "dev": "parcel demo/index.html --dist-dir ./dist/demo",
@@ -13,6 +17,7 @@
   },
   "dependencies": {
     "@swc/helpers": "^0.5.1",
+    "@types/node": "^18.16.18",
     "quill": "^2.0.0-dev.3"
   },
   "devDependencies": {
@@ -20,7 +25,6 @@
     "@parcel/transformer-inline-string": "^2.9.3",
     "@parcel/transformer-sass": "2.9.3",
     "@parcel/transformer-typescript-types": "2.9.3",
-    "@types/node": "^18.16.18",
     "@types/quill": "^2.0.10",
     "parcel": "^2.9.3",
     "prettier": "^2.8.8",
